@@ -1,8 +1,19 @@
 ![mDNS enabled official/ruby](https://raw.githubusercontent.com/hausgold/docker-ruby/master/docs/assets/project.png)
 
+[![Source Code](https://img.shields.io/badge/source-on%20github-blue.svg)](https://github.com/hausgold/docker-ruby)
+[![Docker Image](https://img.shields.io/badge/image-on%20docker%20hub-blue.svg)](https://hub.docker.com/r/hausgold/ruby/)
+
 This Docker images provides the [official/ruby](https://hub.docker.com/_/ruby/) image as base
 with the mDNS/ZeroConf stack on top. So you can enjoy your [ruby](https://www.ruby-lang.org) app
 while it is accessible by default as *ruby.local*. (Port 80)
+
+- [Requirements](#requirements)
+- [Getting starting](#getting-starting)
+- [docker-compose usage example](#docker-compose-usage-example)
+- [Host configs](#host-configs)
+- [Configure a different mDNS hostname](#configure-a-different-mdns-hostname)
+- [Other top level domains](#other-top-level-domains)
+- [Further reading](#further-reading)
 
 ## Requirements
 
