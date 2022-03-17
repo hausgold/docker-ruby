@@ -5,8 +5,10 @@ MAINTAINER Hermann Mayer "hermann.mayer@hausgold.de"
 ENV MDNS_HOSTNAME=ruby.local
 
 # For some reasons the upstream ruby:2.5 image does not have
-# a /tmp directory, we create it here
-RUN mkdir -p /tmp && chmod 777 /tmp
+# a /tmp directory and many more, so we create ("repair") it here
+RUN mkdir -p /tmp /var/lib/dpkg/updates /etc/apt/preferences.d \
+  /etc/apt/sources.list.d && \
+  chmod 1777 /tmp
 
 # Install system packages
 RUN apt-get update -yqqq && \
