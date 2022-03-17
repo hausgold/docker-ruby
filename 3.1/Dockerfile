@@ -1,4 +1,4 @@
-FROM ruby:2.6
+FROM ruby:3.1
 MAINTAINER Hermann Mayer "hermann.mayer@hausgold.de"
 
 # You can change this environment variable on run's with -e
