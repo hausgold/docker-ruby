@@ -19,6 +19,10 @@ RUN apt-get update -yqqq && \
 COPY config/*.sh /usr/local/bin/
 RUN chmod +x /usr/local/bin/*
 
+# Copy custom utilities
+COPY config/utils/* /usr/local/bin/
+RUN chmod +x /usr/local/bin/*
+
 # Configure haproxy
 COPY config/haproxy.conf /etc/haproxy/haproxy.cfg
 
